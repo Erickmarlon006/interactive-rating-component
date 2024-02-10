@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  color: white;
+  display: flex;
+  font-family: "Overpass", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(213, 19%, 18%);
+  width: 340px;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+.container.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container img {
+  padding: 0.7rem;
+  background-color: hsl(215, 10%, 23%);
+  border-radius: 50%;
+}
+.container.success-message img {
+  background-color: transparent;
+  width: 150px;
+}
+.container.success-message p {
+  text-align: center;
+}
+#rating-selected {
+  color: orange;
+  font-size: 15px;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  background-color: hsl(215, 10%, 23%);
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+}
+.container h2 {
+  padding-top: 1rem;
+}
+
+.container p {
+  padding-block: 1rem;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+input[type="button"] {
+  background-color: hsl(215, 10%, 23%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+input[type="button"]:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+input[type="button"].selected {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.container span {
+  display: flex;
+  justify-content: space-between;
+}
+.container button {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  color: white;
+  height: 35px;
+  border-radius: 2rem;
+  width: 100%;
+  font-family: "Overpass", sans-serif;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+}
+.container button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
